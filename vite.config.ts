@@ -7,5 +7,13 @@ export default defineConfig({
     alias: {
       src: '/src',
     }
+  },
+  build: {
+    target: 'ES2022',
+    rollupOptions: {
+      external: [
+        'axios'
+      ]
+    }
   }
 })
