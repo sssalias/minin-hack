@@ -12,7 +12,7 @@ export default defineConfig({
     target: 'ES2022',
     rollupOptions: {
       external: [
-        'axios'
+        '/^axios:.*/'
       ]
     }
   }
