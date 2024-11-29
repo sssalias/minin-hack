@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
+import { EventsInfoPage, EventsPage, HomePage, MapPage, NewsPage } from 'src/pages'
+import { NewsInfoPage } from 'src/pages/news-page'
 
 interface IRoute {
     path: string
@@ -6,7 +8,30 @@ interface IRoute {
 }
 
 const RouterData: IRoute[] = [
-
+    {
+        path: '/',
+        page: <HomePage/>
+    },
+    {
+        path: '/map',
+        page: <MapPage/>
+    },
+    {
+        path: '/news',
+        page: <NewsPage/>
+    },
+    {
+        path: '/news/:id',
+        page: <NewsInfoPage/>
+    },
+    {
+        path: '/events',
+        page: <EventsPage/>
+    },
+    {
+        path: '/events/:id',
+        page: <EventsInfoPage/>
+    }
 ]
 
 const AppRouter: React.FC = () => {
