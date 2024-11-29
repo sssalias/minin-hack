@@ -24,13 +24,9 @@ export const NAV: INavItem[] = [
         title: 'Мероприятия',
         link: '/events'
     },
-    {
-        title: 'Запись',
-        link: '/'
-    },
-    {
-        title: 'Личный Кабинет',
-        link: '/profile',
-        icon: <CgProfile size={24}/>
-    },
+    // {
+    //     title: 'Личный Кабинет',
+    //     link: '/profile',
+    //     icon: <CgProfile size={24}/>
+    // },
 ]

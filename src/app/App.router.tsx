@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { EventsInfoPage, EventsPage, HomePage, MapPage, NewsPage } from 'src/pages'
 import { NewsInfoPage } from 'src/pages/news-page'
+import ProfilePage from 'src/pages/profile-page/profile-page'
 
 interface IRoute {
     path: string
@@ -31,6 +32,10 @@ const RouterData: IRoute[] = [
     {
         path: '/events/:id',
         page: <EventsInfoPage/>
+    },
+    {
+        path: '/profile',
+        page: <ProfilePage/>
     }
 ]
 
